@@ -1,0 +1,22 @@
+{
+  "name": "flex",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "devDependencies": {
+    "node-sass": "^6.0.0"
+  },
+  "scripts": {
+    "code": "node-sass scss/main.scss css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ajab-sharif/Flex-Practice.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ajab-sharif/Flex-Practice/issues"
+  },
+  "homepage": "https://github.com/ajab-sharif/Flex-Practice#readme"
+}

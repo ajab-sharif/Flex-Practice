@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  background-image: linear-gradient(to right bottom, #df0043, #c7053f);
+  background-repeat: no-repeat;
+  line-height: 1.6;
+  background-size: cover;
+  min-height: 100vh;
+  color: #cecdcd; }
+
+.container {
+  max-width: 120rem;
+  height: 50rem;
+  background: #e2fcff;
+  margin: 8rem auto;
+  box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.301); }
+
+.header {
+  height: 7rem;
+  background-color: white; }
+
+.content {
+  display: flex; }
+
+.sidebar {
+  background: red;
+  flex: 0 0 18%; }
+
+.main {
+  background: green;
+  flex: 1; }
