@@ -14,31 +14,168 @@ html {
 body {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
-  background-image: linear-gradient(to right bottom, #df0043, #c7053f);
+  background-image: linear-gradient(to right bottom, #df0043, #fa0f55);
   background-repeat: no-repeat;
   line-height: 1.6;
   background-size: cover;
   min-height: 100vh;
-  color: #cecdcd; }
+  color: #585858; }
 
 .container {
   max-width: 120rem;
-  height: 50rem;
-  background: #e2fcff;
+  background: #bec0c0;
   margin: 8rem auto;
   box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.301); }
 
 .header {
-  height: 7rem;
-  background-color: white; }
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.4rem; }
 
 .content {
   display: flex; }
 
 .sidebar {
-  background: red;
-  flex: 0 0 18%; }
+  flex: 0 0 18%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #313131; }
 
-.main {
+.hotel-view {
   background: green;
-  flex: 1; }
+  flex: 1;
+  height: 80rem; }
+
+.logo {
+  height: 3.5rem;
+  margin-left: 3rem; }
+
+.search {
+  flex: 0 0 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .search__input {
+    font-family: inherit;
+    font-size: inherit;
+    background-color: #eeeeee;
+    border: none;
+    padding: .7rem 2rem;
+    width: 90%;
+    border-radius: 100px;
+    transition: all .3s ease;
+    margin-right: -3rem;
+    color: #9e9c9c; }
+    .search__input:focus {
+      outline: none;
+      width: 100%;
+      background-color: #cac9c9; }
+    .search__input::-webkit-input-placeholder {
+      font-weight: 100;
+      color: #9e9c9c;
+      text-transform: capitalize; }
+  .search__input:focus + .search__button {
+    background-color: #cac9c9; }
+  .search__input:focus + .search__button {
+    background-color: #cac9c9; }
+  .search__button {
+    border: none;
+    background-color: #eeeeee;
+    transition: all .3s ease;
+    cursor: pointer; }
+    .search__button:focus {
+      outline: none; }
+    .search__button:active {
+      transform: translateY(2px); }
+  .search__icon {
+    height: 2rem;
+    width: 2rem;
+    fill: #9e9c9c; }
+
+.user-nav {
+  display: flex;
+  align-self: stretch;
+  align-items: center; }
+  .user-nav > * {
+    padding: 0 1.8rem;
+    cursor: pointer;
+    height: 100%; }
+  .user-nav > *:hover {
+    background-color: #eeeeee; }
+  .user-nav__icon-box {
+    display: flex;
+    align-items: center;
+    position: relative; }
+  .user-nav__icon {
+    height: 2.25rem;
+    width: 2.25rem; }
+  .user-nav__notification {
+    font-size: .8rem;
+    height: 1.75rem;
+    width: 1.75rem;
+    border-radius: 50%;
+    background-color: #fa0f55;
+    position: absolute;
+    top: .4rem;
+    right: 1.1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white; }
+  .user-nav__user {
+    display: flex;
+    align-items: center; }
+  .user-nav__user-photo {
+    height: 3.75rem;
+    width: 3.75rem;
+    margin-right: 1rem;
+    border-radius: 50%; }
+  .user-nav__user-name {
+    font-weight: 900; }
+
+.side-nav {
+  font-size: 1.4rem;
+  list-style: none;
+  margin-top: 3.5rem; }
+  .side-nav__item {
+    position: relative; }
+  .side-nav__item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 3px;
+    transform: scaleY(0);
+    transition: transform 0.2s, width 0.2s 0.4s cubic-bezier(0.02, 0.22, 1, 0.53), background 0.1s ease;
+    transform-origin: center;
+    background-color: #fa0f55; }
+  .side-nav__item:hover:before, .side-nav__item--active:before {
+    transform: scaleY(1);
+    width: 100%; }
+  .side-nav__item:active::before {
+    background: #ff146e; }
+  .side-nav__link:link, .side-nav__link:visited {
+    color: white;
+    text-decoration: none;
+    display: block;
+    text-transform: uppercase;
+    padding: 1.5rem 3rem;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    position: relative; }
+  .side-nav__icon {
+    height: 1.75rem;
+    width: 1.75rem;
+    fill: currentColor;
+    margin-right: 2rem; }
+
+.legal {
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 2.5rem;
+  color: white; }
