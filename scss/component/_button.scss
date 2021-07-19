@@ -1,0 +1,75 @@
+.btn-inline {
+    color: $clr-primary;
+    font-size: inherit;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all .2s;
+    border: none;
+    border-bottom: 1px solid currentColor;
+    display: inline-block;
+    padding-bottom: 2px;
+    text-transform: capitalize;
+    padding: .3rem .5rem ;
+    border-radius: 100px;
+
+
+    & span {
+        margin-left: 3px;
+        transition: margin-left .2s;
+    }
+
+    &:hover {
+        color: $clr-gray-dark;
+
+        span {
+            margin-left: .8rem;
+        }
+    }
+
+    &:focus {
+        outline: none;
+        animation: btn-animated 1s infinite;
+    }
+
+}
+
+.btn {
+    font-size: 1.5rem;
+    border: none;
+    text-transform: uppercase;
+    color: white;
+    background: linear-gradient(135deg, $clr-primary 50%, $clr-primary-light-2 50%);
+    border-radius: 100px;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    &>* {
+        display: inline-block;
+        transition: all .4s;
+        height: 100%;
+        width: 100%;
+    }
+    &:focus{
+        animation: btn-animated 1s infinite;
+    }
+    &__visible {
+        padding: 2rem 5rem;
+    }
+
+    &__invisible {
+        position: absolute;
+        left: 0;
+        top: -100%;
+        padding: 2rem 0;
+
+    }
+    &:hover{
+        background: linear-gradient(-135deg, $clr-primary 50%, $clr-primary-light-2 50%);
+    }
+    &:hover &__invisible {
+        top: 0;
+    }
+    &:hover &__visible {
+        transform:translateY(100%)
+    }
+}

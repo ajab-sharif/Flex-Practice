@@ -1,0 +1,27 @@
+// color 
+$clr-primary:rgb(223, 0, 67);
+$clr-primary-light:rgb(250, 15, 85);
+$clr-primary-light-2:rgb(255, 0, 64);
+
+$clr-gray-light:rgb(238, 238, 238);
+$clr-gray-light-drak:rgb(202, 201, 201);
+$clr-gray-dark:rgb(158, 156, 156);
+$clr-drak-2:rgb(49, 49, 49);
+
+$clr-light:rgb(255, 255, 255);
+$clr-light-1:rgb(216, 216, 216);
+$clr-light-2:rgb(190, 192, 192);
+
+$clr-deafult:rgb(88, 88, 88);
+
+// box shadow 
+$box-shadow-dark: 0 3rem 6rem rgba(0, 0, 0, 0.301);
+$box-shadow-gray: 0 3rem 6rem rgba(0, 0, 0, 0.185);
+
+// brekpoint
+$breakpoint-big-dasktop:112.5em;// 1800px;
+$breakpoint-laptop:112.5em ;// 1800px;
+$breakpontLaptopMini:78.125em;//tab-land 1250px;
+$breakpoint-tab-port:62.5em;// 1000px;
+$breakpoint-phone-lands:33.75em;//540px
+$breakpoint-phone-port:21.25em;// 340px;

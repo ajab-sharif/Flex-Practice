@@ -1,0 +1,19 @@
+
+// responsive management 
+/*
+0 - 320px  = phone(portrail) ;
+0 - 320px  = phone(portrail) ;
+0 - 320px  = phone(portrail) ;
+0 - 320px  = phone(portrail) ;
+0 - 320px  = phone(portrail) ;
+ 
+$breakpoint call manager ...............
+
+*/
+@mixin respond($breakpoint) {
+    @if $breakpoint==breakpoint-laptop-mini{
+        @media only screen and (max-width:$breakpontLaptopMini) {
+            @content
+        }
+    }
+}

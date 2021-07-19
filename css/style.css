@@ -9,6 +9,16 @@
     transform: scale(1);
     box-shadow: none; } }
 
+/*
+0 - 320px  = phone(portrail) ;
+0 - 320px  = phone(portrail) ;
+0 - 320px  = phone(portrail) ;
+0 - 320px  = phone(portrail) ;
+0 - 320px  = phone(portrail) ;
+ 
+$breakpoint call manager ...............
+
+*/
 * {
   margin: 0;
   padding: 0; }
@@ -87,7 +97,8 @@ body {
   max-width: 120rem;
   margin: 8rem auto;
   box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.301);
-  background-color: white; }
+  background-color: white;
+  border-radius: 12px; }
 
 .header {
   background-color: white;

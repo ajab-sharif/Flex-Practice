@@ -1,0 +1,75 @@
+.paragraph {
+    &:not(:last-of-type) {
+        margin-bottom: 2rem;
+    }
+}
+
+.list {
+
+    list-style: none;
+    padding: 3rem 0;
+    margin: 3rem 0;
+    border-top: 1px solid $clr-gray-dark;
+    border-bottom: 1px solid $clr-gray-dark;
+    font-size: inherit;
+    text-transform: capitalize;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    &__item {
+        flex: 0 0 50%;
+        display: flex;
+
+    }
+
+    &__item::before {
+        content: "";
+        width: 1.5rem;
+        height: 1.5rem;
+        margin-right: .7rem;
+        background-color: $clr-primary;
+        -webkit-mask-image: url(../img/svg/chevron-with-circle-right.svg);
+        -webkit-mask-size: cover;
+        align-self: center;
+    }
+}
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ recomment----------------------
+
+.recomment {
+    color: $clr-light-2;
+    font-size: 1.3rem;
+
+    display: flex;
+    align-items: center;
+
+    &__count {
+     margin-right: auto;
+    }
+
+    &__frieds {}
+
+    &__photo {
+        box-sizing:content-box;
+        height: 4rem;
+        width: 4rem;
+        border-radius: 50%;
+        border: 3px solid $clr-gray-dark;
+
+        &:not(:last-of-type){
+            margin-right: -2.3rem;
+        }
+    }
+}
+
+// cta section 
+.cta{
+    text-align: center;
+    padding: 5rem 0;
+    &__head-text{
+        color: $clr-drak-2;
+        font-weight: 300;
+        font-size: 2rem;
+        margin-bottom: 1.3rem;
+    }
+}
